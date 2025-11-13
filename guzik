@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #x{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+            }
+    </style>
+</head>
+<body>
+    <div id="x">X</div>
+      <script>
+        let x = document.querySelector("#x")
+        let left = 100
+        x.addEventListener("mousedown", function (){
+            left += 100
+        x.style.left = left + "px"
+        })
+
+        x.addEventListener("mouseup", function (){
+            left -=100
+            x.style.left = left + "px"
+        })
+      </script>
+</body>
+</html>
