@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 1rem;
+            background-color: #333;
+        }
+.col {
+    flex: 1 0 0;
+    padding: 0 .75rem;
+    background-color: #888;
+}
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class="row">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+            </div>
+            <script>
+                let a = document.querySelector('.col')
+                let b = document.querySelectorAll('.col')
+                console.log(a)
+                console.log(b)
+                b[0].innerHTML = "Kuba"
+                b[1].innerHTML = "Warda"
+                b[2].innerHTML = "3TI"
+
+            </script>
+</body>
+</html>
