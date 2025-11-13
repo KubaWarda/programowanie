@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Licznik kliknięć: <span id ="licznik">0</span></p>
+    <button id="przycisk">Kliknij mnie!</button>
+    
+    <script>
+        let liczbaKlikniec = 0;
+        const licznik = document.getElementById("licznik");
+        const przycisk = document.getElementById("przycisk");
+
+        przycisk.addEventListener("click", () => {
+            liczbaKlikniec++;
+            licznik.textContent = liczbaKlikniec;
+        });
+    </script>
+</body>
+</html>
